@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+body{
+    padding: 20vh 10vw;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.card-container{
+    box-sizing: border-box;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+}
+
+@media screen and (min-width: 800px){
+    .card-container{
+        flex-direction: row;
+        max-width: 1020px;
+    }
+}
+
+.card{
+    height: auto;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+    .card{
+        width: 336px;
+        height: 500px;
+    }
+}
+
+.card__icon{
+    margin-bottom: 1.5em;
+}
+
+.card__sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media screen and (min-width:800px){
+    .card__sedan{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+}
+
+.card__suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card_luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width:800px){
+    .card_luxury{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+.card_title {
+    color: #FFFFFF;
+}
+
+.card_description{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8em;
+    opacity: .8;
+}
+
+.card__info{
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding: .5em 0;
+}
+
+@media screen and (min-width:800px) {
+    .card__info{
+        margin-top: 100px;
+    }
+}
+
+.card__info-sedan{
+    color: hsl(31, 77%, 52%);
+}
+
+.card__info-suv{
+    color: hsl(184, 100%, 22%);
+}
+
+.card__info-luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+
+.attribution {
+    font-size: 10px; text-align: center;
+    margin-bottom: 2em;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
